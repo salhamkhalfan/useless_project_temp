@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOUCH പുല്ല് - stop doomscrolling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%233aa94f'/%3E%3Crect x='5' y='2' width='5' height='1' fill='%23FFE44D'/%3E%3Crect x='4' y='3' width='7' height='1' fill='%23FFE44D'/%3E%3Crect x='3' y='4' width='3' height='1' fill='%23FFE44D'/%3E%3Crect x='6' y='4' width='1' height='1' fill='%231c3b1f'/%3E%3Crect x='7' y='4' width='3' height='1' fill='%23FFE44D'/%3E%3Crect x='2' y='5' width='11' height='1' fill='%23FFE44D'/%3E%3Crect x='2' y='6' width='12' height='1' fill='%23FFE44D'/%3E%3Crect x='5' y='7' width='4' height='1' fill='%23FF9F43'/%3E%3Crect x='2' y='7' width='3' height='1' fill='%23FFE44D'/%3E%3Crect x='9' y='7' width='5' height='1' fill='%23FFE44D'/%3E%3Crect x='3' y='8' width='11' height='1' fill='%23FFE44D'/%3E%3Crect x='3' y='9' width='10' height='1' fill='%23FFE44D'/%3E%3Crect x='4' y='10' width='7' height='1' fill='%23E8B93D'/%3E%3Crect x='5' y='11' width='5' height='1' fill='%23E8B93D'/%3E%3Crect x='6' y='12' width='3' height='1' fill='%23E8B93D'/%3E%3Crect x='7' y='13' width='1' height='1' fill='%23E8B93D'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="sun">
+    <div class="sun-core"></div>
+  </div>
+  <div class="pixel-cloud c1"></div>
+  <div class="pixel-cloud c2"></div>
+
+  <main>
+    <header>
+      <div class="rainbow"></div>
+<div class="logo-row">
+        <svg class="pixel-leaf" viewBox="0 0 12 12" aria-hidden="true">
+          <rect x="3" y="0" width="5" height="1" fill="#FFE44D"/>
+          <rect x="2" y="1" width="7" height="1" fill="#FFE44D"/>
+          <rect x="1" y="2" width="3" height="1" fill="#FFE44D"/>
+          <rect x="4" y="2" width="1" height="1" fill="#1c3b1f"/>
+          <rect x="5" y="2" width="3" height="1" fill="#FFE44D"/>
+          <rect x="0" y="3" width="11" height="1" fill="#FFE44D"/>
+          <rect x="0" y="4" width="12" height="1" fill="#FFE44D"/>
+          <rect x="3" y="5" width="4" height="1" fill="#FF9F43"/>
+          <rect x="0" y="5" width="3" height="1" fill="#FFE44D"/>
+          <rect x="7" y="5" width="5" height="1" fill="#FFE44D"/>
+          <rect x="1" y="6" width="11" height="1" fill="#FFE44D"/>
+          <rect x="1" y="7" width="10" height="1" fill="#FFE44D"/>
+          <rect x="2" y="8" width="7" height="1" fill="#E8B93D"/>
+          <rect x="3" y="9" width="5" height="1" fill="#E8B93D"/>
+          <rect x="4" y="10" width="3" height="1" fill="#E8B93D"/>
+          <rect x="5" y="11" width="1" height="1" fill="#E8B93D"/>
+        </svg>
+        <h1>TOUCH പുല്ല്</h1>
+      </div>
+      <p class="tagline">STOP DOOMSCROLLING &bull; GO INTO NATURE &bull; FEEL THE FRESHNEZzz...
+      </p>
+    </header>
+
+    <section id="dropzone" class="panel dropzone">
+      <div class="dz-deco deco-mountain" aria-hidden="true">
+        <svg viewBox="0 0 34 22">
+          <rect x="17" y="0" width="1" height="1" fill="#ffffff"/>
+          <rect x="16" y="1" width="3" height="1" fill="#ffffff"/>
+          <rect x="15" y="2" width="5" height="1" fill="#ffffff"/>
+          <rect x="14" y="3" width="7" height="1" fill="#7fae9c"/>
+          <rect x="13" y="4" width="9" height="1" fill="#7fae9c"/>
+          <rect x="12" y="5" width="11" height="1" fill="#6b9a88"/>
+          <rect x="11" y="6" width="13" height="1" fill="#6b9a88"/>
+          <rect x="10" y="7" width="15" height="1" fill="#5b8a76"/>
+          <rect x="9" y="8" width="17" height="1" fill="#5b8a76"/>
+          <rect x="8" y="9" width="19" height="1" fill="#4f7d66"/>
+          <rect x="7" y="10" width="21" height="1" fill="#4f7d66"/>
+          <rect x="1" y="11" width="1" height="1" fill="#2f9b3a"/>
+          <rect x="6" y="11" width="23" height="1" fill="#2f9b3a"/>
+          <rect x="0" y="12" width="2" height="1" fill="#2f9b3a"/>
+          <rect x="5" y="12" width="25" height="1" fill="#2f9b3a"/>
+          <rect x="4" y="13" width="27" height="1" fill="#2f9b3a"/>
+          <rect x="3" y="14" width="29" height="1" fill="#2a8f35"/>
+          <rect x="2" y="15" width="31" height="1" fill="#2a8f35"/>
+          <rect x="1" y="16" width="33" height="1" fill="#2a8f35"/>
+          <rect x="0" y="17" width="35" height="1" fill="#2a8f35"/>
+          <rect x="1" y="18" width="33" height="1" fill="#237b2c"/>
+          <rect x="2" y="19" width="31" height="1" fill="#237b2c"/>
+          <rect x="3" y="20" width="29" height="1" fill="#237b2c"/>
+        </svg>
+      </div>
+
+      <div class="dz-deco deco-tree" aria-hidden="true">
+        <svg viewBox="0 0 12 16">
+          <rect x="5" y="1" width="2" height="1" fill="#37a347"/>
+          <rect x="4" y="2" width="4" height="1" fill="#37a347"/>
+          <rect x="3" y="3" width="6" height="1" fill="#37a347"/>
+          <rect x="2" y="4" width="8" height="1" fill="#37a347"/>
+          <rect x="1" y="5" width="10" height="1" fill="#37a347"/>
+          <rect x="2" y="6" width="8" height="1" fill="#2f9b3a"/>
+          <rect x="3" y="7" width="6" height="1" fill="#2f9b3a"/>
+          <rect x="4" y="8" width="4" height="1" fill="#2f9b3a"/>
+          <rect x="5" y="9" width="2" height="1" fill="#2f9b3a"/>
+          <rect x="12" y="10" width="2" height="1" fill="#2f9b3a"/>
+          <rect x="4" y="10" width="4" height="1" fill="#6b4a2b"/>
+          <rect x="4" y="11" width="4" height="1" fill="#6b4a2b"/>
+          <rect x="0" y="12" width="12" height="1" fill="#2a8f35"/>
+          <rect x="0" y="13" width="12" height="1" fill="#237b2c"/>
+        </svg>
+      </div>
+
+      <div class="dz-deco deco-plant" aria-hidden="true">
+        <svg viewBox="0 0 10 12">
+          <rect x="4" y="0" width="2" height="1" fill="#8ee36f"/>
+          <rect x="3" y="1" width="4" height="1" fill="#8ee36f"/>
+          <rect x="2" y="2" width="6" height="1" fill="#7bd95a"/>
+          <rect x="4" y="3" width="2" height="1" fill="#2f9436"/>
+          <rect x="4" y="4" width="2" height="1" fill="#2f9436"/>
+          <rect x="3" y="5" width="4" height="1" fill="#c77b3a"/>
+          <rect x="2" y="6" width="6" height="1" fill="#b06a2c"/>
+          <rect x="0" y="7" width="10" height="1" fill="#a05f26"/>
+          <rect x="0" y="8" width="10" height="1" fill="#237b2c"/>
+        </svg>
+      </div>
+
+      <div class="dz-deco deco-flower" aria-hidden="true">
+        <svg viewBox="0 0 9 10">
+          <rect x="3" y="0" width="1" height="1" fill="#b58cff"/>
+          <rect x="5" y="0" width="1" height="1" fill="#ff7ac8"/>
+          <rect x="2" y="1" width="5" height="1" fill="#ff7ac8"/>
+          <rect x="4" y="1" width="1" height="1" fill="#ffd94d"/>
+          <rect x="3" y="2" width="3" height="1" fill="#ff7ac8"/>
+          <rect x="4" y="3" width="1" height="1" fill="#2f9436"/>
+          <rect x="3" y="4" width="2" height="1" fill="#2f9436"/>
+          <rect x="4" y="5" width="1" height="1" fill="#2f9436"/>
+          <rect x="0" y="6" width="9" height="1" fill="#2a8f35"/>
+          <rect x="0" y="7" width="9" height="1" fill="#237b2c"/>
+        </svg>
+      </div>
+
+      <div class="dz-inner">
+        <div class="dz-icon" aria-hidden="true">
+          <svg viewBox="0 0 14 14">
+            <rect x="6" y="0" width="2" height="2" fill="#8ee36f"/>
+            <rect x="4" y="1" width="6" height="2" fill="#7bd95a"/>
+            <rect x="2" y="2" width="10" height="3" fill="#37a347"/>
+            <rect x="3" y="3" width="2" height="2" fill="#8ee36f"/>
+            <rect x="9" y="3" width="2" height="2" fill="#8ee36f"/>
+            <rect x="6" y="5" width="2" height="3" fill="#2f9436"/>
+            <rect x="3" y="8" width="8" height="2" fill="#c77b3a"/>
+            <rect x="1" y="10" width="12" height="2" fill="#b06a2c"/>
+            <rect x="0" y="12" width="14" height="2" fill="#a05f26"/>
+          </svg>
+        </div>
+        <p class="dz-title">DROP A LEAF PHOTO HERE</p>
+      </div>
+      <input id="file" type="file" accept="image/*" hidden>
+    </section>
+
+    <section id="loading" class="panel loading" hidden>
+      <div class="sprout">
+        <div class="sprout-stem"></div>
+        <div class="sprout-leaf"></div>
+        <div class="sprout-leaf leaf2"></div>
+      </div>
+      <p id="load-text" class="load-text">TRIANGULATING...</p>
+      <div class="progress"><div id="progress-bar" class="progress-fill"></div></div>
+    </section>
+
+    <section id="error" class="panel error-panel" hidden></section>
+
+    <section id="results" hidden>
+      <h2 class="section-title">YOUR LEAF'S JOURNEY</h2>
+
+      <div class="galley">
+        <figure class="shot">
+          <img id="img-original" alt="original leaf">
+          <figcaption>1. ORIGINAL</figcaption>
+        </figure>
+        <figure class="shot">
+          <img id="img-skeleton" alt="skeleton">
+          <figcaption>2. SKELETON</figcaption>
+        </figure>
+        <figure class="shot">
+          <img id="img-overlay" alt="graph overlay">
+          <figcaption>3. GRAPH OVERLAY</figcaption>
+        </figure>
+        <figure class="shot">
+          <img id="img-clean" alt="clean graph">
+          <figcaption>4. GRAPH CLEAN</figcaption>
+        </figure>
+      </div>
+
+      <h2 class="section-title">THE COMPUTATION</h2>
+      <div class="compute-grid">
+        <div class="panel panel--blue formula">
+          <p class="formula">R = (N + E) &times; &mu; + L</p>
+          <ul id="steps" class="steps"></ul>
+        </div>
+        <div class="panel panel--pink stats">
+          <div class="stat">
+            <span class="stat-label">N</span><span class="stat-value" id="stat-N">-</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">E</span><span class="stat-value" id="stat-E">-</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">C</span><span class="stat-value" id="stat-C">-</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">&mu;</span><span class="stat-value" id="stat-mu">-</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">L</span><span class="stat-value" id="stat-L">-</span>
+          </div>
+          <div class="stat stat-r">
+            <span class="stat-label">R</span><span class="stat-value" id="stat-R">-</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">YOUR NATURE MEDICINE</h2>
+      <div class="panel panel--sun video-panel">
+        <div id="video-body"></div>
+        <p id="video-meta" class="video-meta"></p>
+        <button id="again" class="pix-btn">&#127807; TRY AGAIN</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="grass">
+    <span class="fl fl1">&#127800;</span>
+    <span class="fl fl2">&#127801;</span>
+    <span class="fl fl3">&#127803;</span>
+    <span class="fl fl4">&#127805;</span>
+    <span class="fl fl5">&#127807;</span>
+  </div>
+  <footer>
+    &copy; <span id="year"></span> TOUCH SOME പുല്ല് &bull; LEAF VEINS &rarr; R &rarr; LONG NATURE VIDEO &bull; GO OUTSIDE
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
